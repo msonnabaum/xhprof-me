@@ -30,7 +30,7 @@ SummaryView = Backbone.View.extend {
       el.removeAttr("id") if el.attr("id") is "drop-area"
     else
       el.attr("id", "drop-area")
-      el.html('Drop an XHProf file onto this space!')
+      el.html("Drop an XHProf file onto this space! Didn't work? Be sure you create it with serialize(xhprof_disable());")
 
   renderSummary: (@xhprof) ->
     xhprof_data = @xhprof.getFlattenedData()
